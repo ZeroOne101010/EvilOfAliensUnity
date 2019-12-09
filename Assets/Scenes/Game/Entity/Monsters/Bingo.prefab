@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 18
+  m_SortingOrder: 13
   m_Sprite: {fileID: -5720429097031363069, guid: bcb10d736de53c74d86b075d2a6bb57e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 1946187389}
   - component: {fileID: 2010091737}
   - component: {fileID: 2010091738}
-  - component: {fileID: 2010091736}
+  - component: {fileID: 1330712158}
   m_Layer: 0
   m_Name: Bingo
   m_TagString: Untagged
@@ -269,7 +269,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.12, y: 1.78}
   m_EdgeRadius: 0
---- !u!114 &2010091736
+--- !u!114 &1330712158
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -278,10 +278,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3238056971883679245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc1e59ee9e29951498912dd691b43596, type: 3}
+  m_Script: {fileID: 11500000, guid: 20de2a16ee3a81948b3921a9b0827a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackedObj: {fileID: 0}
+  size: {x: 2, y: 3}
+  trackedObject: {fileID: 0}
   trackSpeed: 5
 --- !u!1 &3635677702266656646
 GameObject:
@@ -757,7 +758,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 19
+  m_SortingOrder: 14
   m_Sprite: {fileID: -7642239419928554605, guid: bcb10d736de53c74d86b075d2a6bb57e,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
