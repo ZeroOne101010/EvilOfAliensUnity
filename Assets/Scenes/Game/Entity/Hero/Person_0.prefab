@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3592173234550792210}
   - component: {fileID: 4595723444634147068}
-  - component: {fileID: -2669944075754450377}
   - component: {fileID: 1511966651}
-  - component: {fileID: 1511966654}
+  - component: {fileID: 5527166314942100888}
+  - component: {fileID: 1511966653}
   m_Layer: 0
   m_Name: Person_0
   m_TagString: Untagged
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: -2634799857069279492, guid: dcb37851b8354424a8bc9984d841a6d2,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,20 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-2669944075754450377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7777902609572635655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eddd2e86df062f49b5ced2043e1d623, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  jumpForce: 20
 --- !u!50 &1511966651
 Rigidbody2D:
   serializedVersion: 4
@@ -119,7 +105,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1511966654
+--- !u!61 &5527166314942100888
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,7 +114,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 7777902609572635655}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a90513d39f73f5a47b14bcda6d24798f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -145,3 +131,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.318, y: 1.5770521}
   m_EdgeRadius: 0
+--- !u!114 &1511966653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7777902609572635655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0844aedd787e3d84481dd7cd934fece4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: {x: 1, y: 1}
+  speed: 10
+  jumpForce: 20
