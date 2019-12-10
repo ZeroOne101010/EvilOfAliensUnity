@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IEntityState
+public class AIAttack : MonoBehaviour
 {
+    public AIAttack()
+    {
 
-    void start();
-
-    void update();
+    }
 }

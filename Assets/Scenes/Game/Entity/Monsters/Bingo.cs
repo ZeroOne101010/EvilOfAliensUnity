@@ -11,6 +11,7 @@ public class Bingo : Entity, IEntityState
     public void start()
     {
         addTask(new AIMoveToObject(gameObject, trackedObject, trackSpeed));
+        
     }
 
     public void update()

@@ -7,7 +7,6 @@ public class AITask
 {
     public UnityAction task;
     public bool isUpdate;
-
     public AITask()
     {
         isUpdate = true;

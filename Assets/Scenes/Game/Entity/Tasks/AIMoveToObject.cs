@@ -66,7 +66,6 @@ public class AIMoveToObject : AITask
             if(animator != null)
             animator.SetBool("MoveTrackObject", false);
         }
-
     }
 
 }
