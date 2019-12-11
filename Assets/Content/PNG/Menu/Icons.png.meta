@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 83ffb719966b8cb4c84e0934645ac7c7
+guid: e93bfa0687c129a4c8b55e1370edf007
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2000
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,10 +113,10 @@ TextureImporter:
       name: Icons_0
       rect:
         serializedVersion: 2
-        x: 3187
-        y: 5409
-        width: 4226
-        height: 4217
+        x: 104
+        y: 3447
+        width: 3028
+        height: 3537
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,7 +124,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fda194f7291c3094dae49f92a359cf6d
+      spriteID: 7b577885b33667545ba493168460c449
       internalID: 1161201145128540330
       vertices: []
       indices: 
@@ -134,10 +134,10 @@ TextureImporter:
       name: Icons_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2283
-        width: 2851
-        height: 2858
+        x: 3278
+        y: 2767
+        width: 4589
+        height: 4217
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 81b83cb845487b74a9356260c1ad5363
+      spriteID: d9e4cbb0dd3fd374f8823b82008b0cdf
       internalID: 2130535880278150251
       vertices: []
       indices: 
@@ -155,10 +155,10 @@ TextureImporter:
       name: Icons_2
       rect:
         serializedVersion: 2
-        x: 7912
-        y: 2283
-        width: 2851
-        height: 2858
+        x: 8474
+        y: 3447
+        width: 2858
+        height: 3537
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,7 +166,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47a5eb4235986664294be6d92ca7ba32
+      spriteID: 4246bab550387584a96eacbb87579d15
       internalID: 184950751378207249
       vertices: []
       indices: 
@@ -176,10 +176,10 @@ TextureImporter:
       name: Icons_3
       rect:
         serializedVersion: 2
-        x: 710
+        x: 0
         y: 0
-        width: 9102
-        height: 1639
+        width: 11504
+        height: 1776
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,7 +187,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c734272fa487a946a912d56ece6b74b
+      spriteID: bae52b2243ec98541b5309a428a0f925
       internalID: 1202984965197363600
       vertices: []
       indices: 

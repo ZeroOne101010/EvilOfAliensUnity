@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class AIPlayerController : AITask
@@ -23,8 +25,8 @@ public class AIPlayerController : AITask
         jumpButton = GameObject.FindGameObjectWithTag("jumpbutton");
         rigid = gameObject.GetComponent<Rigidbody2D>();
         task = PlayerMove;
-        if(jumpButton != null)
-        jumpButton.GetComponent<Button>().onClick.AddListener(jumpForListener);
+        if (jumpButton != null)
+            jumpButton.GetComponent<Button>().onClick.AddListener(jumpForListener);
     }
 
     public void PlayerMove()
@@ -124,6 +126,4 @@ public class AIPlayerController : AITask
         }
         
     }
-
-
 }
