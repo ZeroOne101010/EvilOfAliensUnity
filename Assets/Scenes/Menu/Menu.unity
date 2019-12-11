@@ -655,14 +655,13 @@ MonoBehaviour:
   feildPosition: {fileID: 817975216}
   cameraFeild: {fileID: 511762072}
   prifab:
-  - {fileID: 8335970945792603199, guid: 322009478515832439b7198859b94727, type: 3}
-  - {fileID: 1039363342828101438, guid: 7c7782437073ed245ac3f4316142c3e9, type: 3}
+  - {fileID: 1367330782106366706, guid: b1fb1dc30759b824ab163dc6ae765279, type: 3}
+  - {fileID: 1353452897132993494, guid: 51faa9f1ee0612249abf57ac9c08d5db, type: 3}
   time: 10
-  countMeteorite: 20
+  countMeteorite: 10
   offsetBorder: 4
   k: 2
   meteorite: []
-  countCreatedMeteorite: 0
   countLoadingMeteorite: 1
   timer: 0
 --- !u!4 &255053591

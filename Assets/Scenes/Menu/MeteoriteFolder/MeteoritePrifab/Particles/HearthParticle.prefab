@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 1275161428619230420}
   - component: {fileID: 6547603337222544321}
   - component: {fileID: 7402485331268435823}
+  - component: {fileID: -43308770617820533}
+  - component: {fileID: 2409436540685834646}
+  - component: {fileID: 547904454479675504}
   m_Layer: 0
   m_Name: HearthParticle
   m_TagString: Untagged
@@ -27,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1039363342828101438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.77, y: -8.61, z: -113.40641}
-  m_LocalScale: {x: 0.01945037, y: 0.01945037, z: 0.01945037}
+  m_LocalScale: {x: 0.009238926, y: 0.009238926, z: 0.009238926}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -69,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -5947433861040873002, guid: 4cd1750d4e7171846a6b982671dbcb32,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -96,3 +99,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedMin: 1
   speedMax: 3
+--- !u!50 &-43308770617820533
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039363342828101438}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &2409436540685834646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039363342828101438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcbef4e9fe072fb4491b1b9acd78e234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: 0.0001
+  time: 20
+--- !u!114 &547904454479675504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039363342828101438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 356098ee281625349a539e7bafe9fba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSpeedRotation: 2
+  maxSpeedRotation: 8

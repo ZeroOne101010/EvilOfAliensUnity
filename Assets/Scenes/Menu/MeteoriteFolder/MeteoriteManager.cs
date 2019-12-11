@@ -13,8 +13,7 @@ public class MeteoriteManager : MonoBehaviour
     public float offsetBorder;
     public float k;
 
-    public GameObject[] meteorite;
-    public int countCreatedMeteorite;
+    public List<GameObject> meteorite;
     public int countLoadingMeteorite;
     public int timer;
 
@@ -22,7 +21,7 @@ public class MeteoriteManager : MonoBehaviour
 
     void Start()
     {
-        meteorite = new GameObject[countMeteorite];
+        meteorite = new List<GameObject>();
         countLoadingMeteorite = countMeteorite;
         if (countMeteorite != 0)
         {
@@ -37,8 +36,8 @@ public class MeteoriteManager : MonoBehaviour
 
     void Update()
     {
-        //clampedMeteorite();
-        //createMeteoriteInTime();
+        clampedMeteorite();
+        createMeteoriteInTime();
     }
 
     public void clampedMeteorite()
@@ -46,7 +45,7 @@ public class MeteoriteManager : MonoBehaviour
         Vector3 sizeCamera = cameraFeild.GetComponent<SpriteRenderer>().bounds.size;
         Vector3 cameraPos = feildPosition.transform.position + new Vector3(-sizeCamera.x / 2, sizeCamera.y / 2);
         int kPos = 2;
-        for (int x = 0; x < countMeteorite; x++)
+        for (int x = 0; x < meteorite.Count; x++)
         {
             if (meteorite[x] != null)
             {
@@ -87,7 +86,7 @@ public class MeteoriteManager : MonoBehaviour
     public void saveMeteorite(int id)
     {
         Destroy(meteorite[id]);
-        meteorite[id] = null;
+        meteorite.Remove(meteorite[id]);
         countLoadingMeteorite++;
     }
 
@@ -129,7 +128,8 @@ public class MeteoriteManager : MonoBehaviour
 
         GameObject obj = prifab[prifabId];
 
-        meteorite[countCreatedMeteorite] = Instantiate(obj, meteoritePos, new Quaternion(0, 0, Random.Range(0, 360), 0));
+        meteorite.Add(Instantiate(obj, meteoritePos, new Quaternion(0, 0, Random.Range(0, 360), 0)));
+        int countCreatedMeteorite = meteorite.Count - 1;
         Meteorite meteoriteComponent = meteorite[countCreatedMeteorite].GetComponent<Meteorite>();
         float speedMeteorite = Random.Range(meteoriteComponent.minSpeed, meteoriteComponent.maxSpeed);
 
